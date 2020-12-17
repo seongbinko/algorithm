@@ -1,14 +1,11 @@
 #왕실의 나이트
-import time
+# 8x8 좌표에서 말이 이동할 수 있는 경우의 수 구하기
 
 input_data = input()
-
-start_time = time.time()
 
 x = int(input_data[1])
 
 y = input_data[0]
-
 
 y_list = "0abcdefgh"
 
@@ -23,6 +20,3 @@ for i in range(8):
     if x + dx[i] > 0 and y + dy[i] > 0 and  x + dx[i] < 9 and y + dy[i] < 9:
         count = count +1
 print(count)
-
-end_time = time.time()
-print("time :", end_time - start_time)
