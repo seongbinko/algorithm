@@ -4,7 +4,7 @@
 n, m, k = map(int, input().split())
 
 data = list(map(int, input().split()))
-data.sort() # 데이터 정렬
+data.sort()  # 데이터 정렬
 
 _k = 0
 
@@ -20,10 +20,10 @@ result = 0
 
 # 수열로 파악했을 때
 # m // (k+1) * k
-count = int(m/(k+1)) * k
-count += m % (k+1)
+count = int(m / (k + 1)) * k
+count += m % (k + 1)
 
 result += (count) * data[-1]
-result += (m-count) * data[-2]
+result += (m - count) * data[-2]
 
 print(result)

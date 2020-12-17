@@ -1,15 +1,15 @@
 # 1이 될 때 까지
 
-n, k = map(int,input().split())
+n, k = map(int, input().split())
 
 result = 0
 
-while(True):
+while (True):
     if n < k:
         break
     # if(n%k != 0):
-    target = (n//k)*k
-    result += (n-target)
+    target = (n // k) * k
+    result += (n - target)
     n = target
     continue
     result += 1
